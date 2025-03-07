@@ -1,0 +1,23 @@
+package childPackage;
+
+public class Parent {
+    protected String name;
+    private int age;
+
+    public Parent() {
+        this.name = "Parent Name";
+        this.age = 40;
+    }
+
+    public void displayDetails() {
+        System.out.println("Name: " + name);
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+}
