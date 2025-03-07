@@ -1,0 +1,37 @@
+import java.util.Scanner;// input linu parne vayera scnner lai import gareu
+
+class Book { //class book banaunu ko reason vane book ko data haru lai store garna lai
+    // Data members
+    private String book_name;
+    private String ISBN;
+    private String author;
+    private double price;
+    // Default constructor .if we used public in front of class name then it is called as public constructor
+
+    // Method to read data members. // read data vaneko chai user le input gareko data lai store garna lai
+    public void readData() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter book name: ");
+        book_name = scanner.nextLine();
+        System.out.print("Enter ISBN: ");
+        ISBN = scanner.nextLine();
+        System.out.print("Enter author: ");
+        author = scanner.nextLine();
+        System.out.print("Enter price: ");
+        price = scanner.nextDouble();
+    }
+
+    // Method to display data members
+    public void displayData() {// displaydata vaneko chai user le input gareko data lai display garna lai yo chai function hos
+        System.out.println("Book Name: " + book_name);
+        System.out.println("ISBN: " + ISBN);
+        System.out.println("Author: " + author);
+        System.out.println("Price: " + price);
+    }
+
+    public static void main(String[] args) {
+        Book book = new Book();
+        book.readData();
+        book.displayData();
+    }
+}
