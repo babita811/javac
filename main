@@ -1,0 +1,20 @@
+class Person{ 
+    String name;
+    int age;// function banako 
+    Person(String name ,int age){
+        this.name =name;
+        this.age = age;
+
+    }
+    void displayinfo(){
+        System.out.println("name: " +name);
+        System.out.println("age: "+age);
+    }
+}
+
+public class Main{
+    public static void main(String args[]){
+        Person person1 =new Person("ram hari",22);
+        person1.displayinfo();
+    }
+}
