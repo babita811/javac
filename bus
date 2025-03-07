@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+class Box {
+    private double length;
+    private double breadth;
+    private double height;
+
+    public void readData() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter length: ");
+        length = scanner.nextDouble();
+        System.out.print("Enter breadth: ");
+        breadth = scanner.nextDouble();
+        System.out.print("Enter height: ");
+        height = scanner.nextDouble();
+        scanner.close();
+    }
+
+    public double volume() {
+        return length * breadth * height;
+    }
+
+    public static void main(String[] args) {
+        Box box = new Box();
+        box.readData();
+        System.out.println("Volume of the box: " + box.volume());
+    }
+}
