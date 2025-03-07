@@ -1,0 +1,22 @@
+public class Strings {
+    public static void main(String[] args){
+        String name =new String("ram");
+        String names = "raem";
+        System.out.println(name);
+        // same string can't be modified
+        
+        System.out.println(names);
+        System.out.println( name + "is a good guy");
+        
+
+        System.out.print("the name is ");
+        System.out.print(name);
+        // without ln print will not go to next line
+        int a = 45;
+        float b = 45.5f;
+
+        System.out.printf("The value of a is %d and value of b is %f", a, b);
+        // format specifier is %d for integer and %f for float
+    }
+
+}
